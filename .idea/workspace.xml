@@ -15,17 +15,19 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2250">
-              <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+            <state relative-caret-position="40">
+              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding>
-                <element signature="e#0#6194#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="method#read_txt#0;class#Main#0" expanded="false" />
+                <element signature="e#653#724#0" expanded="false" />
+                <element signature="method#str_split#0;class#Main#0" expanded="false" />
                 <element signature="method#isDigit#0;class#Main#0" expanded="false" />
                 <element signature="method#getNumbers#0;class#Main#0" expanded="false" />
                 <element signature="method#splitNotNumber#0;class#Main#0" expanded="false" />
                 <element signature="method#str_regax#0;class#Main#0" expanded="false" />
                 <element signature="method#convert_txt#0;class#Main#0" expanded="false" />
-                <element signature="method#Output_str_splited#0;class#Main#0" expanded="false" />
+                <element signature="method#Output_str_to_screen#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -46,14 +48,31 @@
       <find>不合法</find>
       <find>合法</find>
       <find>！</find>
+      <find>3000</find>
+      <find>22000</find>
+      <find>replaceAll</find>
+      <find>str</find>
     </findStrings>
     <replaceStrings>
       <replace>0</replace>
       <replace>str[i]</replace>
+      <replace>22000</replace>
+      <replace>length</replace>
+      <replace>replace</replace>
+      <replace>str_temp</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="preprocess" />
+      </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -71,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="775" />
@@ -182,7 +201,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -265,20 +284,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="775" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267776" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6686838" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="798" y="6" width="453" height="741" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="798" y="6" width="453" height="741" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2701909" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27013177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496329" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6686838" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -287,7 +306,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,42 +342,42 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>135</line>
+          <line>131</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>138</line>
+          <line>134</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>139</line>
+          <line>135</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>144</line>
+          <line>140</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>156</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>153</line>
+          <line>149</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>152</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="33" />
+      <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -389,14 +407,16 @@
         <state relative-caret-position="200">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#0#6194#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#read_txt#0;class#Main#0" expanded="false" />
+            <element signature="e#653#724#0" expanded="false" />
+            <element signature="method#str_split#0;class#Main#0" expanded="false" />
             <element signature="method#isDigit#0;class#Main#0" expanded="false" />
             <element signature="method#getNumbers#0;class#Main#0" expanded="false" />
             <element signature="method#splitNotNumber#0;class#Main#0" expanded="false" />
             <element signature="method#str_regax#0;class#Main#0" expanded="false" />
             <element signature="method#convert_txt#0;class#Main#0" expanded="false" />
-            <element signature="method#Output_str_splited#0;class#Main#0" expanded="false" />
+            <element signature="method#Output_str_to_screen#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -406,14 +426,16 @@
         <state relative-caret-position="200">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#0#6194#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#read_txt#0;class#Main#0" expanded="false" />
+            <element signature="e#653#724#0" expanded="false" />
+            <element signature="method#str_split#0;class#Main#0" expanded="false" />
             <element signature="method#isDigit#0;class#Main#0" expanded="false" />
             <element signature="method#getNumbers#0;class#Main#0" expanded="false" />
             <element signature="method#splitNotNumber#0;class#Main#0" expanded="false" />
             <element signature="method#str_regax#0;class#Main#0" expanded="false" />
             <element signature="method#convert_txt#0;class#Main#0" expanded="false" />
-            <element signature="method#Output_str_splited#0;class#Main#0" expanded="false" />
+            <element signature="method#Output_str_to_screen#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -423,14 +445,16 @@
         <state relative-caret-position="120">
           <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding>
-            <element signature="e#0#6194#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#read_txt#0;class#Main#0" expanded="false" />
+            <element signature="e#653#724#0" expanded="false" />
+            <element signature="method#str_split#0;class#Main#0" expanded="false" />
             <element signature="method#isDigit#0;class#Main#0" expanded="false" />
             <element signature="method#getNumbers#0;class#Main#0" expanded="false" />
             <element signature="method#splitNotNumber#0;class#Main#0" expanded="false" />
             <element signature="method#str_regax#0;class#Main#0" expanded="false" />
             <element signature="method#convert_txt#0;class#Main#0" expanded="false" />
-            <element signature="method#Output_str_splited#0;class#Main#0" expanded="false" />
+            <element signature="method#Output_str_to_screen#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -440,14 +464,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding>
-            <element signature="e#0#6194#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#read_txt#0;class#Main#0" expanded="false" />
+            <element signature="e#653#724#0" expanded="false" />
+            <element signature="method#str_split#0;class#Main#0" expanded="false" />
             <element signature="method#isDigit#0;class#Main#0" expanded="false" />
             <element signature="method#getNumbers#0;class#Main#0" expanded="false" />
             <element signature="method#splitNotNumber#0;class#Main#0" expanded="false" />
             <element signature="method#str_regax#0;class#Main#0" expanded="false" />
             <element signature="method#convert_txt#0;class#Main#0" expanded="false" />
-            <element signature="method#Output_str_splited#0;class#Main#0" expanded="false" />
+            <element signature="method#Output_str_to_screen#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -730,42 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_11/src.zip!/java/io/Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding>
-            <marker date="1402920844000" expanded="false" signature="0:215" ph="/.../" />
-            <marker date="1402920844000" expanded="true" signature="236:833" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="915:1003" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="1041:1093" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="1154:1477" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="1510:1636" ph="/**...*/" />
-            <marker date="1402920844000" expanded="false" signature="1659:1670" ph=" { " />
-            <marker date="1402920844000" expanded="false" signature="1687:1693" ph=" }" />
-            <marker date="1402920844000" expanded="true" signature="1699:1891" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="1926:2043" ph="{...}" />
-            <marker date="1402920844000" expanded="true" signature="2049:2515" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="2564:2799" ph="{...}" />
-            <marker date="1402920844000" expanded="true" signature="2805:3004" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="3059:3103" ph="{...}" />
-            <marker date="1402920844000" expanded="true" signature="3109:3465" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="3553:3724" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="3778:3822" ph="{...}" />
-            <marker date="1402920844000" expanded="true" signature="3828:4392" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="4464:4952" ph="{...}" />
-            <marker date="1402920844000" expanded="true" signature="4958:5923" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="5986:6114" ph="{...}" />
-            <marker date="1402920844000" expanded="true" signature="6120:7418" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="7501:7639" ph="{...}" />
-            <marker date="1402920844000" expanded="true" signature="7645:8105" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="8158:8204" ph="{...}" />
-            <marker date="1402920844000" expanded="true" signature="8210:9062" ph="/**...*/" />
-            <marker date="1402920844000" expanded="true" signature="9121:9427" ph="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_11/src.zip!/java/io/BufferedReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -816,19 +806,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_11/src.zip!/java/io/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding>
+            <marker date="1402920844000" expanded="false" signature="0:215" ph="/.../" />
+            <marker date="1402920844000" expanded="true" signature="236:833" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="915:1003" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="1041:1093" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="1154:1477" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="1510:1636" ph="/**...*/" />
+            <marker date="1402920844000" expanded="false" signature="1659:1670" ph=" { " />
+            <marker date="1402920844000" expanded="false" signature="1687:1693" ph=" }" />
+            <marker date="1402920844000" expanded="true" signature="1699:1891" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="1926:2043" ph="{...}" />
+            <marker date="1402920844000" expanded="true" signature="2049:2515" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="2564:2799" ph="{...}" />
+            <marker date="1402920844000" expanded="true" signature="2805:3004" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="3059:3103" ph="{...}" />
+            <marker date="1402920844000" expanded="true" signature="3109:3465" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="3553:3724" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="3778:3822" ph="{...}" />
+            <marker date="1402920844000" expanded="true" signature="3828:4392" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="4464:4952" ph="{...}" />
+            <marker date="1402920844000" expanded="true" signature="4958:5923" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="5986:6114" ph="{...}" />
+            <marker date="1402920844000" expanded="true" signature="6120:7418" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="7501:7639" ph="{...}" />
+            <marker date="1402920844000" expanded="true" signature="7645:8105" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="8158:8204" ph="{...}" />
+            <marker date="1402920844000" expanded="true" signature="8210:9062" ph="/**...*/" />
+            <marker date="1402920844000" expanded="true" signature="9121:9427" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="180" column="0" lean-forward="false" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+        <state relative-caret-position="40">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           <folding>
-            <element signature="e#0#6194#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="method#read_txt#0;class#Main#0" expanded="false" />
+            <element signature="e#653#724#0" expanded="false" />
+            <element signature="method#str_split#0;class#Main#0" expanded="false" />
             <element signature="method#isDigit#0;class#Main#0" expanded="false" />
             <element signature="method#getNumbers#0;class#Main#0" expanded="false" />
             <element signature="method#splitNotNumber#0;class#Main#0" expanded="false" />
             <element signature="method#str_regax#0;class#Main#0" expanded="false" />
             <element signature="method#convert_txt#0;class#Main#0" expanded="false" />
-            <element signature="method#Output_str_splited#0;class#Main#0" expanded="false" />
+            <element signature="method#Output_str_to_screen#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>

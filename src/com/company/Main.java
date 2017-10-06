@@ -5,19 +5,20 @@
 package com.company;
 
 import java.io.*;
-import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
-    private static String[] str = new String[3000];
-    private static String[] str_splited = new String[3000];
+    private static int length = 20;
+    private static String[] str_from_file = new String[length];
+    private static String[] str_splited = new String[length];
+    private static String[] str_preprocessed = new String[length];
 
     public static void read_txt() {
         try { // 防止文件建立或读取失败，用catch捕捉错误并打印，也可以throw
                 /* 读入TXT文件 */
-//            String pathname = "C:\\Users\\Cooper\\Desktop\\test.java";
-            String pathname = "C:\\Users\\Cooper\\Desktop\\微博数据.txt";
+            String pathname = "C:\\Users\\Cooper\\Desktop\\test.java";
+//            String pathname = "C:\\Users\\Cooper\\Desktop\\微博数据.txt";
             // 绝对路径或相对路径都可以，这里是绝对路径，写入文件时演示相对路径
             File filename = new File(pathname); // 要读取以上路径的input。txt文件
 
@@ -50,13 +51,13 @@ public class Main {
                     //System.out.print(line);
                 }
                 */
-//                str[0] = br.readLine();
-                for (int i = 0; str != null; i++) { // 数据长度还未定，就用“EOF”或“null”
-                    str[i] = br.readLine(); //把数据读取到str数组中
-//                    System.out.print(str[i] + "\n"); // 输出来看看是否写入数组
+//                str_from_file[0] = br.readLine();
+                for (int i = 0; str_from_file != null; i++) { // 数据长度还未定，就用“EOF”或“null”
+                    str_from_file[i] = br.readLine(); //把数据读取到str数组中
+//                    System.out.print(str_from_file[i] + "\n"); // 输出来看看是否写入数组
                 }
-                /*while (str[i] != null){
-                    str[i] = br.readLine();
+                /*while (str_from_file[i] != null){
+                    str_from_file[i] = br.readLine();
                     i++;
                 }*/
 
@@ -70,30 +71,25 @@ public class Main {
         }
     }
 
-    public static String[] str_preprocess(String []str){
+    public static String[] str_preprocess(String []str_temp){
+//        2017-10-6 18:42:48 预处理有问题，不能处理微博大咖
         //每次处理一行
         //参数是从文件中读取的字符串数组和行数，返回值为预处理完毕的字符串数组
         String temp_str = "\t"+"微博大咖";
-        String []str_preprocessed = new String[3000];
+        String []str_preprocessed = new String[length];
         int i = 0;
-        while(str[i] != null){ //对str的每一行都清洗一遍
-            str_preprocessed[i] = str[i].replaceAll("微博大咖", temp_str);
-            str_preprocessed[i] = str[i].replaceAll("null", "\tnull");
-            str_preprocessed[i] = str[i].replaceAll("\b\t", "\t");
-            str_preprocessed[i] = str[i].replaceAll("\t\t", "\t");
+        while(str_temp[i] != null){ //对str的每一行都清洗一遍
+            str_preprocessed[i] = str_temp[i].replace("微博大咖", temp_str);
+            str_preprocessed[i] = str_temp[i].replace("null", "\tnull");
+            str_preprocessed[i] = str_temp[i].replace("\b\t", "\t");
+            str_preprocessed[i] = str_temp[i].replace("\t\t", "\t");
             ++i;
         }
-
-        for (String s : str_preprocessed) {
-            //打印，检查是否成功
-            System.out.println(s);
-        }
-
         return str_preprocessed; //返回预处理过的数组
     }
-    public static  String[] str_split(String[] str, int i) {
+    public static  String[] str_split(String[] str_temp, int i) {
         //参数是从文件中读取的字符串数组和第i行，返回值为分割好的字符串数组
-        String string = str[i];
+        String string = str_temp[i];
         String reg = "\t"; //按照\t进行分割
         String[] arr = string.split(reg); //arr 是临时数组，存储分割好的字符串
 //        System.out.print(arr.length);   //打印数组长度
@@ -132,8 +128,8 @@ public class Main {
         return "";
     }
 
-    public static void str_regax(String[] str, int i) {
-        boolean flag = isDigit(str[0]); //因为第一行存储的就是id，所以需要判断是否全为数字
+    public static void str_regax(String[] str_temp, int i) {
+        boolean flag = isDigit(str_temp[0]); //因为第一行存储的就是id，所以需要判断是否全为数字
 
         //判断是否全为数字
         if (flag) {
@@ -147,11 +143,11 @@ public class Main {
         }
     }
 
-    public static void convert_txt(String[] str) {
+    public static void convert_txt(String[] strings) {
         //处理文本，每一条如下，分隔符为tab(\t)
         int i = 0;
-        while (str != null) {
-            str_splited = str_split(str, i);
+        while (strings != null) {
+            str_splited = str_split(strings, i);
             //将第i行的字符串分割好，存到str_splited数组中
 
             str_regax(str_splited, i);
@@ -160,34 +156,42 @@ public class Main {
         }
     }
 
-    public static void Output_str_splited(String[] str) {
+    public static void Output_str_to_screen(String []strTemp){
+        for (String s : strTemp) {
+            System.out.println(s);
+        }
+        /*int i = 0;
+        while (str_from_file != null){
+            System.out.println(str_from_file[i]);
+            i++;
+        }*/
+    }
+    public static void Output_str_to_file(String[] str_temp) {
         try { //对文件读写，必须有异常处理
             File writename = new File("C:\\Users\\Cooper\\Desktop\\output_str_splited.txt");
             writename.createNewFile(); // 创建新文件
             BufferedWriter out = new BufferedWriter(new FileWriter(writename));
+
+           /* for (String s : str_temp) {
+                out.write(s);
+            }*/
             int i = 0;
-            while (str_splited[i] != null) {
-                out.write(str_splited[i] + "\n");
+            while (str_temp[i] != null || i <= length) {
+                out.write(str_temp[i] + "\n");
+                i++;
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     public static void main(String[] args) {
-        int i = 0;
         read_txt();
-        str_preprocess(str);
-        convert_txt(str);
-        Output_str_splited(str_splited);
+        str_preprocessed = str_preprocess(str_from_file);
+        Output_str_to_screen(str_preprocessed);
+//        convert_txt(str_from_file);
+        Output_str_to_file(str_preprocessed);
         //成功读取并将数据保存在数组中
-        /*while (str[i] != "null"){
-            System.out.print(str[i] + "\n");
-            i++;
-        }*/
-        // System.out.println("hello,world");
     }
-
 }
 
